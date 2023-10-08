@@ -4,22 +4,22 @@ import "./VerticalTimeline.css";
 const Event = ({ event }) => (
   <div className="content">
     <p>
-      <span>Event Name:</span> {event.EventName}
+      <span>Event Name :</span> {event.EventName}
     </p>
     <p>
-      <span>Club:</span> {event.ClubName}
+      <span>Club :</span> {event.ClubName}
     </p>
     <p>
-      <span>Start Date:</span> {event.StartDate}
+      <span>Start Date :</span> {event.StartDate}
     </p>
     <p>
-      <span>End Date:</span> {event.EndDate}
+      <span>End Date :</span> {event.EndDate}
     </p>
     <p>
-      <span>Time:</span> {event.EventTime}
+      <span>Time :</span> {event.EventTime}
     </p>
     <p>
-      <span>Venue:</span> {event.Venue}
+      <span>Venue :</span> {event.Venue}
     </p>
   </div>
 );
@@ -65,7 +65,6 @@ const VerticalTimeline = (props) => {
         );
       })}
     </div>
-
   );
 };
 

@@ -7,7 +7,7 @@ function Events() {
   useEffect(() => {
     const readGoogleSheet = async () => {
       try {
-        const response = await fetch("https://sheetdb.io/api/v1/h4usz80gsp7gq");
+        const response = await fetch("https://sheetdb.io/api/v1/al7pl5xxhzyil");
         const data = await response.json();
         setEventlist(data);
       } catch (error) {
