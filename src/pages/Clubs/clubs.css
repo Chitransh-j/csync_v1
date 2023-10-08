@@ -7,3 +7,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.title > span {
+  color: #0072b1;
+  margin-left: 10px;
+  margin-right: 10px;
+}

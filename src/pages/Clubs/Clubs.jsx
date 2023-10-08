@@ -5,7 +5,9 @@ import "./clubs.css";
 const Clubs = () => {
   return (
     <section>
-      <h1 className="title">Clubs And Committees</h1>
+      <h1 className="title">
+        Clubs <span> And </span> Committees
+      </h1>
       <Kabila />
     </section>
   );

@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
-
 export const Nav = styled.nav`
+  position: sticky;
+  top: 0;
   background: #000;
   font-size: 1.3rem;
   height: 75px;
@@ -34,7 +35,7 @@ export const Bars = styled(FaBars)`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 32px;
+    top: 25px;
     right: 20px;
     transfrom: translate(-100%, 75%);
     font-size: 1.8rem;
