@@ -1,0 +1,253 @@
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0;
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+  
+  .timeline::after {
+    content: "";
+    position: absolute;
+    background: rgb(32, 38, 60);
+  }
+  
+  .container {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .container.left {
+    left: 0;
+  }
+  
+  .container.right {
+    left: 50%;
+
+  }
+  
+  .container-left,
+  .container-right {
+    width: 50%;
+      padding-left: 0;
+  padding-right: 0;
+  }
+  
+  .container-right {
+    margin-left: auto;
+  }
+  
+  .container::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .container.right::after {
+    left: -8px;
+  }
+
+  .container.right::before {
+    left: 8px;
+  }
+  
+  .container .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
+  
+  .container.left .date {
+    right: -190px;
+  }
+  
+  .container.right .date {
+    left: -175px;
+  }
+  
+  .container .icon {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    padding: 9px 0;
+    top: calc(50% - 20px);
+    background: #ffffff;
+    border: 2px solid rgb(32, 38, 60);
+    border-radius: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(32, 38, 60);
+    z-index: 1;
+  }
+  
+  .container.left .icon {
+    right: 56px;
+  }
+  
+  .container.right .icon {
+    left: 56px;
+  }
+  
+  .container .content {
+    padding: 30px;
+    background: #749BC2;
+    position: relative;
+    border-radius: 0 300px 300px 0;
+  }
+  
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+  
+  .container .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .container .content ul {
+    margin-right: 50px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .container.left {
+      left: 0;
+    }
+  
+    .container.right {
+      left: 0;
+    }
+  
+    .container-left,
+    .container-right {
+      width: 100%;
+    }
+  
+    .container-right {
+      margin-left: 0;
+    }
+  
+    .container::after {
+      display: none;
+    }
+  
+    .container::before {
+      display: none;
+    }
+  
+    .container .date {
+      position: static;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      right: 0;
+      left: 0;
+    }
+  
+    .container.left .date {
+      margin-right: auto;
+    }
+  
+    .container.right .date {
+      margin-left: auto;
+    }
+  
+    .container .icon {
+      position: static;
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 5px 10px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  
+    .container.left .icon {
+      margin-right: auto;
+      width: 30px;
+    }
+  
+    .container.right .icon {
+      margin-left: auto;
+      width: 30px;
+    }
+  
+    .container .content {
+      padding: 15px;
+      border-radius: 0;
+    }
+  
+    .container.right .content {
+      padding: 15px;
+      border-radius: 0;
+    }
+  
+    .container .content h2 {
+      font-size: 16px;
+    }
+  
+    .container .content ul {
+      margin-right: 0;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  
+    .timeline::after {
+      display: none;
+    }
+  }
+
+
+/* Define the animation for all containers to appear from the bottom */
+@keyframes appear-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px); /* Start slightly below the final position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initially, set the opacity to 0 for all containers */
+.container.left, .container.right {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+/* Apply the animation to elements with the class "visible" for all containers */
+.container.left.visible,
+.container.right.visible {
+  animation: appear-from-bottom 3s cubic-bezier(0.39, 0.575, 0.565, 1) forwards; /* Adjust duration and easing */
+  padding-left: 0;
+  padding-right: 0;
+}
