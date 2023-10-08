@@ -1,28 +1,63 @@
-import ecell from "../../assets/images/club_images/ecell.png";
-import tc from "../../assets/images/club_images/technocracy.png";
 import pmrc from "../../assets/images/club_images/pmrc.png";
+import PMRC from "../../assets/images/banner/pmrc.jpeg";
+
+import ECELL from "../../assets/images/banner/ecell.jpeg";
+import ecell from "../../assets/images/club_images/ecell.png";
+
+import TC from "../../assets/images/banner/technocracy.jpeg";
+import tc from "../../assets/images/club_images/technocracy.png";
+
 import nrityam from "../../assets/images/club_images/nrityam.png";
+import NRITYAM from "../../assets/images/banner/nrityam.jpeg";
+
 import click from "../../assets/images/club_images/click.png";
+import CLICK from "../../assets/images/banner/click.jpeg";
+
 import robo from "../../assets/images/club_images/robo.png";
+import ROBO from "../../assets/images/banner/robotix.jpeg";
+
 import gg from "../../assets/images/club_images/gogreen.png";
+import GG from "../../assets/images/banner/green.jpeg";
+
 import abhinay from "../../assets/images/club_images/abhinay.png";
+import ABHINAY from "../../assets/images/banner/abhinay.jpeg";
+
 import raaga from "../../assets/images/club_images/raaga.png";
+import RAAGA from "../../assets/images/banner/raaga.jpeg";
+
 import fcc from "../../assets/images/club_images/fcc.png";
+import FCC from "../../assets/images/banner/fcc.jpeg";
+
 import nss from "../../assets/images/club_images/nss.png";
+import NSS from "../../assets/images/banner/nss.jpeg";
+
 import literati from "../../assets/images/club_images/lierati.png";
+import LITERATI from "../../assets/images/banner/literati.jpeg";
+
 import icell from "../../assets/images/club_images/icell.png";
+import ICELL from "../../assets/images/banner/innovation.jpeg";
+
 import sanskriti from "../../assets/images/club_images/sanskriti.png";
+import SANSKRITI from "../../assets/images/banner/sanskriti.jpeg";
+
 import tedx from "../../assets/images/club_images/tedx.png";
+import TEDX from "../../assets/images/banner/tedx.jpeg";
+
 import shaurya from "../../assets/images/club_images/shaurya.png";
+import SHAURYA from "../../assets/images/banner/shaurya.jpeg";
+
 import tcp from "../../assets/images/club_images/tcp.png";
+import TCP from "../../assets/images/banner/tcp.jpeg";
+
 import sahyog from "../../assets/images/club_images/sahyog.png";
+import SAHYOG from "../../assets/images/banner/sahyog.jpeg";
 
 export const cardData = [
   {
     id: 1,
     svg: pmrc,
     name: "PMRC",
-    banner: "https://source.unsplash.com/cxoR55-bels",
+    banner: PMRC,
     desc: "PMRC is the student media body of NIT Raipur which comprises of a group dedicated coordinators who cover all the events happening around the institute by writing press releases, taking photographs, designing posters and ensuring that each and every event of the Institute gets its due media coverage.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -35,7 +70,7 @@ export const cardData = [
     id: 2,
     svg: ecell,
     name: "Entrepreneurship Cell",
-    banner: "https://source.unsplash.com/oqStl2L5oxI",
+    banner: ECELL,
     desc: "The Entrepreneurship cell, NIT Raipur is a non-profit organization that advocates to inculcate entrepreneurial spirit among the budding young minds who have the ardour to pursue entrepreneurship and aggrandize the ideas that have the potential to excel.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -48,7 +83,7 @@ export const cardData = [
     id: 3,
     svg: tc,
     name: "Team Technocracy",
-    banner: "https://source.unsplash.com/ctu9hTkRuCs",
+    banner: TC,
     desc: "The Students Technical Committee, organizes technical workshops, seminars and events throughout the year. Also, this committee organizes annual techfest of the Institute, AAVARTAN. During Aavartan, Vigyaan a national level science exhibition is the center of attraction along with mega events in different domains like coding, robotics etc.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -61,7 +96,7 @@ export const cardData = [
     id: 4,
     svg: nrityam,
     name: "Nrityam",
-    banner: "https://source.unsplash.com/Vgj9bUwaqT0",
+    banner: NRITYAM,
     desc: "Nrityam works with the objective of promoting dance as an art at different platforms. It considers dance important, as it not only instills confidence and improves the personality of an individual but also helps our cultural heritage to sustain and adopt change.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -74,7 +109,7 @@ export const cardData = [
     id: 5,
     svg: tcp,
     name: "Turing Club of Programmers",
-    banner: "https://source.unsplash.com/SyvsTmuuZyM",
+    banner: TCP,
     desc: "TCP aims to foster and nurture invigorating coding culure among the sudents of the Institute through its Mentorship programme, workshops, and along with several other events including the annual event CodeUtsava.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -87,7 +122,7 @@ export const cardData = [
     id: 6,
     svg: click,
     name: "Click Club",
-    banner: "https://source.unsplash.com/ny6tO4ItOEY",
+    banner: CLICK,
     desc: "Click Club is a hub for photographic enthusiast in NIT Raipur. It aims to showcase one's talent and learn from each experience in a collaborative way. It handles all the the official coverage charge of events.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -100,7 +135,7 @@ export const cardData = [
     id: 7,
     svg: sahyog,
     name: "Sahyog",
-    banner: "https://source.unsplash.com/vEE00Hx5d0Q",
+    banner: SAHYOG,
     desc: "The primary objective of this team is to provide guidance to junior students by senior students through positive and constructive interactions. It works as a link between students and counseling cell of the Institute which facilitates students to seek solutions to their problems.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -113,7 +148,7 @@ export const cardData = [
     id: 8,
     svg: raaga,
     name: "Raaga",
-    banner: "https://source.unsplash.com/yWF2LLan-_o",
+    banner: RAAGA,
     desc: "The music club of Institute Raaga was founded in year 2010 and since then, it has witnessed enthusiastic participation from the students. An annual musical evening, Shruti is organized by the group.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -126,7 +161,7 @@ export const cardData = [
     id: 9,
     svg: icell,
     name: "Innovation Cell",
-    banner: "https://source.unsplash.com/AijuW-HlE30",
+    banner: ICELL,
     desc: "Innovation cell aims to inculcate the spirit of innovation and entrepreneurship amongst the students, encourage and support innovations through guidance, mentorship and support. Students will be encouraged to take up innovative projects with possibility of commercialization.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -139,7 +174,7 @@ export const cardData = [
     id: 10,
     svg: fcc,
     name: "Finance Club",
-    banner: "https://source.unsplash.com/N__BnvQ_w18",
+    banner: FCC,
     desc: "The central focus of the Finance club is to cultivate interest among the students towards the financial sector as well as to promote it as a viable career option post their engineering degree. Finance club will provide students an opportunity to explore the world of Finance, Business Consulting and Analytics.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -152,7 +187,7 @@ export const cardData = [
     id: 11,
     svg: nss,
     name: "NSS",
-    banner: "https://source.unsplash.com/Zyx1bK9mqmA",
+    banner: NSS,
     desc: "National Service Scheme was founded in 1969 with the aim of providing the youths of the country with hands-on experience of community service. We, at NIT Raipur aim to do the same. Team NSS of NIT Raipur is committed to organizing events that help to promote social awareness and give something back to the society. ",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -165,7 +200,7 @@ export const cardData = [
     id: 12,
     svg: literati,
     name: "Literati",
-    banner: "https://source.unsplash.com/8muUTAmcWU4",
+    banner: LITERATI,
     desc: "Literati's main objective is to enhance the literary skills of students, to bring to light the hidden talents among the students and conduct various literary events providing a platform for the students to come up with their not so known skills. ",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -178,7 +213,7 @@ export const cardData = [
     id: 13,
     svg: gg,
     name: "Go Green",
-    banner: "https://source.unsplash.com/x8ZStukS2PM",
+    banner: GG,
     desc: "The green movement of this institution was founded in the year 2010 with the purpose of educating the students about the environmental perils which await us and also empowering the students to contribute towards a greener environment by providing them with the appropriate opportunities.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -191,7 +226,7 @@ export const cardData = [
     id: 14,
     svg: robo,
     name: "Robotix",
-    banner: "https://source.unsplash.com/HBGYvOKXu8A",
+    banner: ROBO,
     desc: "ROBOTiX Club is the Robotics outreach of NIT Raipur. The was founded in the year 2014 with the purpose of technological skills in the diverse fields of mechatronics robotics by transcending the theoretical knowledge into applications to provide modelled solutions for realproblems.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -204,7 +239,7 @@ export const cardData = [
     id: 15,
     svg: abhinay,
     name: "Abhinay",
-    banner: "https://source.unsplash.com/QM_LE41VJJ4",
+    banner: ABHINAY,
     desc: "Abhinay - The Dramatics Club brings society to life through diverse performances like street plays, stage dramas, and sketches. We offer students both a platform to showcase talent and structured mentorship to hone their skills. Members gain confidence, exposure to various theatre elements, and invaluable team and personality development experiences that benefit their future endeavors.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -217,7 +252,7 @@ export const cardData = [
     id: 16,
     svg: tedx,
     name: "Team TEDx",
-    banner: "https://source.unsplash.com/ekHSHvgr27k",
+    banner: TEDX,
     desc: "NIT Raipur was granted the license to organise its first independent TED conference in 2017. The purpose of bringing this, world recognised conference to the institute, was to bring innovators and achievers from various walks of life to NIT Raipur via a platform as huge as TED. TEDxNITRaipur also serves as a platform for the students and local talents to showcase themselves at the global level.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -230,7 +265,7 @@ export const cardData = [
     id: 17,
     svg: shaurya,
     name: "Shaurya",
-    banner: "https://source.unsplash.com/0NaQQsLWLkA",
+    banner: SHAURYA,
     desc: "Shaurya has been at the helm of conducting all the sports activities in the institute. the committee organizes events Samar(the annual sports fest), Inter-branch tournaments, etc. The committee also helps in proper structuring and formation of teams which represent NIT Raipur in national level sports fest including Inter-NIT Sports meet.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
@@ -243,7 +278,7 @@ export const cardData = [
     id: 18,
     svg: sanskriti,
     name: "Sanskriti",
-    banner: "https://source.unsplash.com/ef3A5EDR7Jk",
+    banner: SANSKRITI,
     desc: "Nrityam works with the objective of promoting dance as an art at different platforms. It considers dance important, as it not only instills confidence and improves the personality of an individual but also helps our cultural heritage to sustain and adopt change.",
     socialLinks: {
       instagram: "https://instagram.com/morgan_sweeney",
