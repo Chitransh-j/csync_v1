@@ -1,7 +1,7 @@
 import React from "react";
-import IntroImg from "./people.png";
+import IntroImg from "./people1.png";
 import "./HeroimgStyles.css";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 
 const Heroimg = () => {
   return (
@@ -10,12 +10,14 @@ const Heroimg = () => {
         <img className="intro-img" src={IntroImg} alt="img" />
         <div className="banner-text">
           <h1>
-          <Typewriter 
-            options={{
-            strings: ['Create', 'Collaborate.','Celebrate !'],
-            autoStart: true,
-            loop: true,
-            deleteSpeed: 40,}}/>
+            <Typewriter
+              options={{
+                strings: ["Create", "Collaborate.", "Celebrate !"],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 40,
+              }}
+            />
           </h1>
         </div>
       </div>
