@@ -65,6 +65,7 @@ const VerticalTimeline = (props) => {
         );
       })}
     </div>
+
   );
 };
 
