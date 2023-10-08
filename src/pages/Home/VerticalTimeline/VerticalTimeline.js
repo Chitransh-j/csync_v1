@@ -1,6 +1,28 @@
 import React, { useEffect, useRef } from "react";
-import './VerticalTimeline.css'
+import "./VerticalTimeline.css";
 
+const Event = ({ event }) => (
+  <div className="content">
+    <p>
+      <span>Event Name:</span> {event.EventName}
+    </p>
+    <p>
+      <span>Club:</span> {event.ClubName}
+    </p>
+    <p>
+      <span>Start Date:</span> {event.StartDate}
+    </p>
+    <p>
+      <span>End Date:</span> {event.EndDate}
+    </p>
+    <p>
+      <span>Time:</span> {event.EventTime}
+    </p>
+    <p>
+      <span>Venue:</span> {event.Venue}
+    </p>
+  </div>
+);
 
 const VerticalTimeline = (props) => {
   const timelineRef = useRef(null);
@@ -37,13 +59,8 @@ const VerticalTimeline = (props) => {
         isLeft = !isLeft;
 
         return (
-          <div
-            className={`container ${isLeft ? "left" : "right"}`}
-            key={index}
-          >
-            <div className="content">
-              <h2>{event.EventName}</h2>
-            </div>
+          <div className={`container ${isLeft ? "left" : "right"}`} key={index}>
+            <Event key={index} event={event} />
           </div>
         );
       })}

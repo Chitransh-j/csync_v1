@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './EventsStyles.css';
-import VerticalTimeline from '../VerticalTimeline/VerticalTimeline.js'
+import React, { useState, useEffect } from "react";
+import VerticalTimeline from "../VerticalTimeline/VerticalTimeline.js";
 
 function Events() {
   const [eventlist, setEventlist] = useState([]);
@@ -8,11 +7,11 @@ function Events() {
   useEffect(() => {
     const readGoogleSheet = async () => {
       try {
-        const response = await fetch('https://sheetdb.io/api/v1/h4usz80gsp7gq');
+        const response = await fetch("https://sheetdb.io/api/v1/h4usz80gsp7gq");
         const data = await response.json();
         setEventlist(data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
