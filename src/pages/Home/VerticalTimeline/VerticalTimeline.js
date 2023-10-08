@@ -48,6 +48,7 @@ const VerticalTimeline = (props) => {
         );
       })}
     </div>
+
   );
 };
 

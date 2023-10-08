@@ -1,16 +1,10 @@
+
 .timeline {
     position: relative;
     width: 100%;
     max-width: 1400px;
     margin: 0;
     padding: 15px 0;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
   }
   
   .timeline::after {
@@ -63,50 +57,7 @@
     left: 8px;
   }
   
-  .container .date {
-    position: absolute;
-    display: inline-block;
-    top: calc(50% - 8px);
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    z-index: 1;
-  }
-  
-  .container.left .date {
-    right: -190px;
-  }
-  
-  .container.right .date {
-    left: -175px;
-  }
-  
-  .container .icon {
-    position: absolute;
-    display: inline-block;
-    width: 50px;
-    height: 40px;
-    padding: 9px 0;
-    top: calc(50% - 20px);
-    background: #ffffff;
-    border: 2px solid rgb(32, 38, 60);
-    border-radius: 40px;
-    text-align: center;
-    font-size: 12px;
-    color: rgb(32, 38, 60);
-    z-index: 1;
-  }
-  
-  .container.left .icon {
-    right: 56px;
-  }
-  
-  .container.right .icon {
-    left: 56px;
-  }
-  
+ 
   .container .content {
     padding: 30px;
     background: #749BC2;
@@ -160,44 +111,6 @@
   
     .container::before {
       display: none;
-    }
-  
-    .container .date {
-      position: static;
-      display: block;
-      text-align: center;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      right: 0;
-      left: 0;
-    }
-  
-    .container.left .date {
-      margin-right: auto;
-    }
-  
-    .container.right .date {
-      margin-left: auto;
-    }
-  
-    .container .icon {
-      position: static;
-      display: block;
-      width: auto;
-      height: auto;
-      padding: 5px 10px;
-      margin: 0 auto;
-      margin-bottom: 10px;
-    }
-  
-    .container.left .icon {
-      margin-right: auto;
-      width: 30px;
-    }
-  
-    .container.right .icon {
-      margin-left: auto;
-      width: 30px;
     }
   
     .container .content {

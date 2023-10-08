@@ -1,9 +1,14 @@
 .footer{
     width:100%;
-    padding: 3rem 0 ;
-    background-color: #F6F4EB; 
+    padding: 1rem 0 ;
+    background-color: #000; 
     bottom:0;
+    color:white;
     margin-top: 10rem;
+}
+
+.hdstyle{
+    margin-left :1.4rem;
 }
 
 .footer-container{
@@ -19,7 +24,8 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    justify-content: center;
+    padding: 2rem;
 }
 
 .location{
@@ -29,7 +35,8 @@
 
 .location p{
     line-height: 30px;
-    margin-left : 2rem;
+    margin-left : 3rem;
+    margin-top: 0.5rem;
 }
 
 .right{
@@ -37,38 +44,43 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    justify-content: center;
+    padding: 2rem;
 }
 
-h4{
+h3{
     font-size: 1.2rem;
-    padding-bottom : 0.7rem;
+    padding-bottom : 1.7rem;
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .namer{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-bottom:0.8rem;
 }
 .namer img{
     height: 40px;
     width: 40px;
     border-radius: 50%;
     border-style: solid;
-    transform: translate(20px,10px);
+    transform: translate(20px,3px);
 }
+
 
 .repo{
     text-decoration: none;
-    color:black;
+    color: white;
 }
 .repo:hover{
     color: #91C8E4;
     text-decoration: none;
 }
+
 @media screen and (max-width: 640px) {
     .footer-container{
         grid-template-columns: 1fr;
