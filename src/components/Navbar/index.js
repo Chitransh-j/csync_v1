@@ -5,8 +5,8 @@ import {
   NavLink,
   Bars,
   NavMenu,
-  NavBtn,
-  NavBtnLink,
+  // NavBtn,
+  // NavBtnLink,
 } from "./NavbarElements";
 
 import Logo from "../../assets/images/Logo_1.svg";
@@ -19,7 +19,7 @@ const Navbar = () => {
           src={Logo}
           alt="Logo"
           style={{
-            width: "65px",
+            width: "50px",
             margin: "10px 0px", // Add margin to the top and bottom
           }}
         />
@@ -38,9 +38,9 @@ const Navbar = () => {
         <NavLink to="/about" activeStyle>
           About
         </NavLink>
-        <NavBtn>
+        {/* <NavBtn>
           <NavBtnLink to="/signin">Sign In</NavBtnLink>
-        </NavBtn>
+        </NavBtn> */}
       </NavMenu>
     </Nav>
   );

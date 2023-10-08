@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   top: 0;
   background: #202e5e;
   font-size: 1.3rem;
-  height: 75px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -35,9 +35,9 @@ export const Bars = styled(FaBars)`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 25px;
-    right: 20px;
-    transfrom: translate(-100%, 75%);
+    top: -4px;
+    right: -8px;
+    transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
   }
