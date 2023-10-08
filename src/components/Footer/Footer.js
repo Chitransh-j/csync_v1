@@ -3,10 +3,13 @@ import './FooterStyles.css'
 
 const Footer = () => {
   return (
+    <>
+    <br/>
+    <br/>
     <div className="footer">
     <div className="footer-container">
         <div className="left">
-        <h3>Meet the Creators :</h3>
+        <h3 className='hdstyle'>Meet the Creators :</h3>
             <div className="location">
                   <div className='namer'> 
                   <img src='https://i.pinimg.com/736x/ba/dc/30/badc30c4659b9df4a5d05e6e8d9a3f15.jpg' alt='img2'/>
@@ -31,12 +34,14 @@ const Footer = () => {
               student about every happening at all the clubs. C-sync provides a centralised platform to all this. We are the one 
               and only stop for all your PR needs. Find all about the upcoming and past events here and ignore those whatsapp forwards.  
             </p>
+            <br/>
             <p>
               <a href='https://github.com/V10codes/csync.git' className='repo'> 🔗Check out our project Repo </a> 
             </p>
         </div>
     </div>
 </div>
+</>
   )
 }
 
