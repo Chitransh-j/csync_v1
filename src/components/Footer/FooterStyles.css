@@ -81,6 +81,10 @@ p {
   color: white;
 }
 
+.repo:hover{
+  color: #94c8e4;
+}
+
 @media screen and (max-width: 640px) {
   .footer-container {
     grid-template-columns: 1fr;

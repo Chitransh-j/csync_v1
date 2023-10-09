@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import VerticalTimeline from "../VerticalTimeline/VerticalTimeline.js";
+import "./EventsStyles.css";
 
 function Events() {
   const [eventlist, setEventlist] = useState([]);
@@ -21,6 +22,9 @@ function Events() {
 
   return (
     <div>
+      <h1 className="upcoming-events">
+        Upcoming <span> Events </span>
+      </h1>
       <div>
         <VerticalTimeline eventList={eventlist} />
       </div>

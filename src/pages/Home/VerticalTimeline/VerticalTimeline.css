@@ -222,6 +222,7 @@
 
   .timeline::after {
     display: none;
+    margin-bottom: 3rem;
   }
 }
 
@@ -252,3 +253,7 @@
   padding-right: 0;
 }
 
+.event_tag {
+  color: #fff;
+  padding: 0rem;
+}

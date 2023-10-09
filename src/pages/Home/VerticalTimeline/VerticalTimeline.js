@@ -4,22 +4,25 @@ import "./VerticalTimeline.css";
 const Event = ({ event }) => (
   <div className="content">
     <p>
-      <span>Event Name :</span> {event.EventName}
+      <span className="event_tag">Event Name :</span> {event.EventName}
     </p>
     <p>
-      <span>Club :</span> {event.ClubName}
+      <span className="event_tag">Club :</span> {event.ClubName}
     </p>
     <p>
-      <span>Start Date :</span> {event.StartDate}
+      <span className="event_tag">Start Date :</span> {event.StartDate}
     </p>
     <p>
-      <span>End Date :</span> {event.EndDate}
+      <span className="event_tag">End Date :</span> { event.EndDate}
     </p>
     <p>
-      <span>Time :</span> {event.EventTime}
+      <span className="event_tag">Time :</span> {event.EventTime}
     </p>
     <p>
-      <span>Venue :</span> {event.Venue}
+      <span className="event_tag">Venue :</span> {event.Venue}
+    </p>
+    <p>
+      <span className="event_tag">Event Description :</span> {event.EventDescription}
     </p>
   </div>
 );

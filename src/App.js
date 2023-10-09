@@ -6,16 +6,19 @@ import About from "./pages/About/about";
 import ContactForm from "./pages/ContactForm/ContactForm.js";
 import Clubs from "./pages/Clubs/Clubs.jsx";
 import Footer from "./components/Footer/Footer.js";
+
 function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact-us" element={<ContactForm />} />
-        <Route path="/clubs" element={<Clubs />} />
-      </Routes>
+      <main className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact-us" element={<ContactForm />} />
+          <Route path="/clubs" element={<Clubs />} />
+        </Routes>
+      </main>
       <Footer />
     </Router>
   );
