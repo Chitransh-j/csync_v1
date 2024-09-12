@@ -20,6 +20,12 @@ const creators = [
       "https://e1.pxfuel.com/desktop-wallpaper/924/421/desktop-wallpaper-eren-yeager-icons-eren-icon.jpg",
     github: "https://github.com/devesh-d16",
   },
+  {
+    name: "Abhijat Bhaumik",
+    image:
+      "https://staticg.sportskeeda.com/editor/2021/11/5c80b-16378652432376-1920.jpg",
+    github: "https://github.com/abhijat02",
+  },
 ];
 
 const Footer = () => {
